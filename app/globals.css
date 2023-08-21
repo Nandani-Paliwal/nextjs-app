@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+    .Nextjs-Conf-Btn::before{
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 70px;
+        top: -25%;
+        left: -25%;
+        background-image: conic-gradient(#1f2937 20deg, transparent 120deg)
+    }
+    .Nextjs-Conf-Btn::after{
+        content: "Next.js Conf";
+        width: 94%;
+        height: 94%;
+        background-color: white;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
 }
