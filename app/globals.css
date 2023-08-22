@@ -2,20 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html {
+    background-color: #d0d3d4;
+    color: #111;
+}
+
 @layer utilities {
     .Nextjs-Conf-Btn::before{
         position: absolute;
         content: "";
         width: 150px;
-        height: 70px;
+        height: 80px;
         top: -25%;
         left: -25%;
-        background-image: conic-gradient(#1f2937 20deg, transparent 120deg)
+        background-image: conic-gradient(#666666 20deg, transparent 120deg);
+        border-radius: 10px;
     }
     .Nextjs-Conf-Btn::after{
-        content: "Next.js Conf";
-        width: 94%;
-        height: 94%;
+        content: "";
+        width: 95%;
+        height: 95%;
         background-color: white;
         position: absolute;
         top: 3%;
@@ -23,5 +29,29 @@
         display: flex;
         justify-content: center;
         align-items: center; 
+        border-radius: 1px;
+    }
+    .btn::before {
+        position: absolute;
+        content: "";
+        width: 300px;
+        height: 200px;
+        top: -25%;
+        left: -25%;
+        background-image: conic-gradient(#666666 20deg, transparent 120deg);
+        border-radius: 9999px;
+    }
+    .btn::after{
+        content: "";
+        width: 95%;
+        height: 95%;
+        background-color: white;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        border-radius: 9999px;
     }
 }

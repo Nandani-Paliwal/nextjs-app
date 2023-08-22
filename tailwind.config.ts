@@ -15,7 +15,7 @@ const config: Config = {
       },
       animation: {
         fullSpin:
-          "fullSpin 5s linear infinite",
+          "fullSpin 3s linear infinite",
       },
       keyframes: {
         fullSpin: {
@@ -25,6 +25,9 @@ const config: Config = {
       },
       colors: {
         gray: "#696969",
+        textgray: "#666",
+        grayshade: "#333",
+        primarybg: "#d0d3d4",
         blue: '#0070f3',
       },
     },
