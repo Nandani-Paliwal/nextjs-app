@@ -28,7 +28,7 @@ if (typeof window !== 'undefined') {
 }
 
 return (
-  <div className="flex justify-center items-center flex-col sticky top-0 z-50">
+  <div className="header flex justify-center items-center flex-col sticky top-0 z-50 bg-none">
     <div className="banner flex justify-center bg-black text-white w-full h-14">
       <div className="inner flex justify-between items-center w-4/5 px-3 mx-auto">
         <Image
@@ -43,9 +43,9 @@ return (
       </div>
     </div>
     <header className="flex flex-col justify-center items-center w-full">
-    <div className={`flex flex-col items-center w-full ${
+    <div className={`flex flex-col items-center w-full bg-none ${
         navbarColor
-          ? ' backdrop-blur-lg shadow-lg  '
+          ? ' backdrop-blur-md shadow-lg  '
           : null
       } `}>
       <nav

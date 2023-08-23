@@ -2,11 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 1.65;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 320px;
+    direction: ltr;
+    font-feature-settings: "kern";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: contain
+}
 body, html {
-    background-color: #d0d3d4;
+    background-color: rgb(255, 255, 255);
+    /* background-color: #d0d3d4; */
     color: #111;
 }
-
+.hero{
+    background: linear-gradient(0deg,#fff,hsla(0,0%,100%,0)) #d0d3d4;
+}
+.prism-light-colorful{
+    --width: 900px;
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    top: -72px;
+    transform: translateY(-100px);
+    color: transparent;
+    opacity: 0;
+    pointer-events: none;
+    filter: blur(10px);
+    animation: 0.8s ease 0s 1 normal forwards running hero_fadeIn__hoIwO;
+    mask: url(/prism-mask.png);
+    -webkit-mask: url(/prism-mask.png) 0% 0% / cover;
+}
+@keyframes hero_fadeIn__hoIwO {
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+/* @font-face {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/https://fonts.gstatic.com/s/spacegrotesk/v13/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2) format("woff2");
+    unicode-range: U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd
+}
+.btn {
+    
+    font-family: var(--font-space-grotesk);
+} */
 @layer utilities {
     .Nextjs-Conf-Btn::before{
         position: absolute;

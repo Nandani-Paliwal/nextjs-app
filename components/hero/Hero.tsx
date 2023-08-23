@@ -3,24 +3,21 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="">
-      <div className="relative isolate px-6 lg:px-8">
-        <div className="relative overflow-hidden mx-auto max-w-2xl py-16 sm:py-48 lg:py-16">
-          <div className="">
-            <Image
+    <div className="hero ">
+        <div className=" relative flex flex-col overflow-hidden mx-auto max-w-2xl pt-10 pb-16 sm:py-48 lg:py-16">
+        <Image
               src="/prism-light-colorful.jpg"
               alt=""
               width={900}
               height={900}
-              className="absolute bg-gradient-radial from-primarybg opacity-1"
+              className="prism-light-colorful flex items-center justify-center"
             />
-          </div>
-          <div className="relative mt-[500px]">
+          <div className="relative mt-72 text-center z-10">
             <div className="flex justify-center items-center mb-11">
               <Image src="/conflogo.svg" alt="" width={250} height={250} />
             </div>
             <div className="text-center">
-              <h1 className="text-7xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-9xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Dynamic without limits
               </h1>
               <p className="mt-6 text-xl leading-8 text-textgray font-normal font-sans">
@@ -60,6 +57,5 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
   )
 }
