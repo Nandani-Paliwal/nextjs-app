@@ -34,9 +34,13 @@ const config: Config = {
       colors: {
         gray: "#696969",
         textgray: "#666",
+        gray75: "rgba(0,0,0,.75)",
+        gray05: "rgba(0,0,0,.05)",
         grayshade: "#333",
+        gray444: "#444",
         primarybg: "#d0d3d4",
         blue: '#0070f3',
+        lightblue: "rgba(211,229,255,.4)",
         white98: '#fafafa',
         white92: '#eaeaea',
       },

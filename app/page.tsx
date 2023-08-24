@@ -1,5 +1,5 @@
-import Announcement from '@/components/announcement/Announcement'
-import Hero from '@/components/hero/Hero'
+import Announcement from '@/components/announcement/index'
+import Hero from '@/components/hero/index'
 import Image from 'next/image'
 
 export default function Home() {

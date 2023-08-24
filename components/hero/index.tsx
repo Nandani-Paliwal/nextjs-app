@@ -17,10 +17,10 @@ export default function Hero() {
               <Image src="/conflogo.svg" alt="" width={250} height={250} />
             </div>
             <div className="text-center">
-              <h1 className="text-9xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-9xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-3">
                 Dynamic without limits
               </h1>
-              <p className="mt-6 text-xl leading-8 text-textgray font-normal font-sans">
+              <p className="hero-announcement mt-6 text-xl leading-8 text-textgray font-normal font-sans">
                 Every announcement from the 2022 edition of{" "}
                 <strong className="text-grayshade font-medium">
                   Next.js Conf
