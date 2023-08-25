@@ -63,6 +63,50 @@ body, html {
     transform: scale(1.8);
     opacity: .15;
 }
+.turbo-bg{
+    background: radial-gradient(circle,#ba1ee4 0,rgba(161,252,70,0) 71%);
+    opacity: .2;
+    transform: scale(1.8);
+}
+.vercel-bg {
+
+    background: radial-gradient(circle,#fff 0,rgba(161,252,70,0) 71%);
+    transform: scale(1.8);
+    opacity: .15;
+    transition: opacity .3s ease;
+}
+.nextjs-grid {
+    display: grid;
+    min-height: 680px;
+    perspective: 1500px;
+    grid-template-columns: .4fr .3fr .3fr;
+    grid-template-rows: 1fr .15fr 1fr;
+    grid-template-areas: 
+    "featured major-feat-0 minor-feat-1"
+    "featured major-feat-0 major-feat-1"
+    "featured minor-feat-0 major-feat-1";
+}
+.turbopack-grid {
+    display: grid;
+    min-height: 680px;
+    perspective: 1500px;
+    grid-template-columns: .3fr .4fr .3fr;
+    grid-template-rows: 1fr .15fr 1fr;
+    grid-template-areas: 
+    "minor-feat-1 featured major-feat-0 "
+    "major-feat-1 featured major-feat-0 "
+    "major-feat-1 featured minor-feat-0 ";
+}
+.vercel-grid {
+    display: grid;
+    min-height: 680px;
+    perspective: 1500px;
+    grid-template-columns: .3fr .3fr .4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "major-feat-0 minor-feat-0 featured"
+    "minor-feat-1 major-feat-1 featured ";
+}
 .announcement-subtext {
     background-image: linear-gradient(180deg,#555,#000);
     background-clip: "";
