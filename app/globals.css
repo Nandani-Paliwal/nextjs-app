@@ -1,190 +1,281 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
 .hero-announcement {
-    font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 body {
-    position: relative;
-    min-height: 100%;
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    min-width: 320px;
-    direction: ltr;
-    font-feature-settings: "kern";
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-    overscroll-behavior-y: contain
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 320px;
+  direction: ltr;
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
 }
-body, html {
-    background-color: rgb(255, 255, 255);
-    /* background-color: #d0d3d4; */
-    color: #111;
+body,
+html {
+  background-color: rgb(255, 255, 255);
+  /* background-color: #d0d3d4; */
+  color: #111;
 }
-.hero{
-    background-image: linear-gradient(0deg,#fff,hsla(0,0%,100%,0)) #d0d3d4;
+.hero {
+  background-image: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0)) #d0d3d4;
 }
-.prism-light-colorful{
-    --width: 900px;
-    width: var(--width);
-    height: var(--height);
-    position: absolute;
-    top: -72px;
-    transform: translateY(-100px);
-    color: transparent;
-    opacity: 0;
-    pointer-events: none;
-    filter: blur(10px);
-    animation: 0.8s ease 0s 1 normal forwards running hero_fadeIn__hoIwO;
-    mask: url(/prism-mask.png);
-    -webkit-mask: url(/prism-mask.png) 0% 0% / cover;
+.prism-light-colorful {
+  --width: 900px;
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  top: -72px;
+  transform: translateY(-100px);
+  color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(10px);
+  animation: 0.8s ease 0s 1 normal forwards running hero_fadeIn__hoIwO;
+  mask: url(/prism-mask.png);
+  -webkit-mask: url(/prism-mask.png) 0% 0% / cover;
 }
 .tilt-card-glow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: radial-gradient(circle at 50% -20%,#ffffff22,#0000000f);
-    opacity: 0;
-    transition: opacity .3s ease;
-    mix-blend-mode: plus-lighter;
-    z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: plus-lighter;
+  z-index: 2;
 }
 .nextjs13-bg {
-    background-image: radial-gradient(circle, #0141ff 0,rgba(161,252,70,0) 71%);
-    transform: scale(1.8);
-    opacity: .15;
+  background-image: radial-gradient(
+    circle,
+    #0141ff 0,
+    rgba(161, 252, 70, 0) 71%
+  );
+  transform: scale(1.8);
+  opacity: 0.15;
 }
-.turbo-bg{
-    background: radial-gradient(circle,#ba1ee4 0,rgba(161,252,70,0) 71%);
-    opacity: .2;
-    transform: scale(1.8);
+.turbo-bg {
+  background: radial-gradient(circle, #ba1ee4 0, rgba(161, 252, 70, 0) 71%);
+  opacity: 0.2;
+  transform: scale(1.8);
 }
 .vercel-bg {
-
-    background: radial-gradient(circle,#fff 0,rgba(161,252,70,0) 71%);
-    transform: scale(1.8);
-    opacity: .15;
-    transition: opacity .3s ease;
+  background: radial-gradient(circle, #fff 0, rgba(161, 252, 70, 0) 71%);
+  transform: scale(1.8);
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
 }
 .nextjs-grid {
-    display: grid;
-    min-height: 680px;
-    perspective: 1500px;
-    grid-template-columns: .4fr .3fr .3fr;
-    grid-template-rows: 1fr .15fr 1fr;
-    grid-template-areas: 
-    "featured major-feat-0 minor-feat-1"
-    "featured major-feat-0 major-feat-1"
-    "featured minor-feat-0 major-feat-1";
+  display: flex;
+  flex-direction: column;
 }
 .turbopack-grid {
-    display: grid;
-    min-height: 680px;
-    perspective: 1500px;
-    grid-template-columns: .3fr .4fr .3fr;
-    grid-template-rows: 1fr .15fr 1fr;
-    grid-template-areas: 
-    "minor-feat-1 featured major-feat-0 "
-    "major-feat-1 featured major-feat-0 "
-    "major-feat-1 featured minor-feat-0 ";
+    display: flex;
+    flex-direction: column;
 }
 .vercel-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) and (min-width: 601px) {
+  .nextjs-grid, .turbopack-grid, .vercel-grid {
     display: grid;
     min-height: 680px;
     perspective: 1500px;
-    grid-template-columns: .3fr .3fr .4fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1.4fr 0.2fr 1.4fr;
+    grid-template-areas:
+      "featured featured"
+      "major-feat-0 minor-feat-1"
+      "major-feat-0 major-feat-1"
+      "minor-feat-0 major-feat-1";
+  }
+  .nextjs-grid .featured, .turbopack-grid .featured, .vercel-grid .featured{
+    grid-column: 1 / span 2;
+  }
+  .nextjs-grid .minor-feat-0, .turbopack-grid .minor-feat-0, .vercel-grid .minor-feat-0 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .nextjs-grid .minor-feat-1, .turbopack-grid .minor-feat-1, .vercel-grid .minor-feat-1 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .nextjs-grid .major-feat-0, .turbopack-grid .major-feat-0, .vercel-grid .major-feat-0 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+  }
+  .nextjs-grid .major-feat-1, .turbopack-grid .major-feat-1, .vercel-grid .major-feat-1 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 2;
+  }
+  
+}
+@media (min-width: 1201px) {
+  .nextjs-grid {
+    display: grid;
+    min-height: 680px;
+    perspective: 1500px;
+    grid-template-columns: 0.4fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr 0.15fr 1fr;
+    grid-template-areas:
+      "featured major-feat-0 minor-feat-1"
+      "featured major-feat-0 major-feat-1"
+      "featured minor-feat-0 major-feat-1";
+  }
+  .turbopack-grid {
+    display: grid;
+    min-height: 680px;
+    perspective: 1500px;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    grid-template-rows: 1fr 0.15fr 1fr;
+    grid-template-areas:
+      "minor-feat-1 featured major-feat-0 "
+      "major-feat-1 featured major-feat-0 "
+      "major-feat-1 featured minor-feat-0 ";
+  }
+  .vercel-grid {
+    display: grid;
+    min-height: 680px;
+    perspective: 1500px;
+    grid-template-columns: 0.3fr 0.3fr 0.4fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "major-feat-0 minor-feat-0 featured"
-    "minor-feat-1 major-feat-1 featured ";
+    grid-template-areas:
+      "major-feat-0 minor-feat-0 featured"
+      "minor-feat-1 major-feat-1 featured ";
+  }
+
 }
 .announcement-subtext {
-    background-image: linear-gradient(180deg,#555,#000);
-    background-clip: "";
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #555, #000);
+  background-clip: "";
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.announcement-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  transition: white 0.15s;
+  z-index: -1;
+}
+.announcement-features {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.025) 50%,
+    transparent
+  );
+}
+.announcement-features::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.05) 50%,
+    transparent
+  );
+}
+.announcement-features::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.05) 50%,
+    transparent
+  );
 }
 .badge::before {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    padding: 1px;
-    background-image: linear-gradient(170deg,rgba(0,0,0,.2) -6.28%,rgba(0,0,0,.4) 9.84%,#000 38.59%,rgba(0,0,0,.4) 66.93%,transparent 122.67%);
-    /* -webkit-mask: linear-gradient(#000,#000) content-box,linear-gradient(#000,#000); */
-    mask: linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);
-    /* -webkit-mask-composite: xor; */
-    mask-composite: exclude;
-}
-.announcement-link::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: white;
-    transition:white .15s;
-    z-index: -1;
-}
-@keyframes hero_fadeIn__hoIwO {
-    100% {
-        filter: blur(0px);
-        opacity: 1;
-    }
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background-image: linear-gradient(
+    170deg,
+    rgba(0, 0, 0, 0.2) -6.28%,
+    rgba(0, 0, 0, 0.4) 9.84%,
+    #000 38.59%,
+    rgba(0, 0, 0, 0.4) 66.93%,
+    transparent 122.67%
+  );
+  /* -webkit-mask: linear-gradient(#000,#000) content-box,linear-gradient(#000,#000); */
+  mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
+  /* -webkit-mask-composite: xor; */
+  mask-composite: exclude;
 }
 
-@layer utilities {
-    .Nextjs-Conf-Btn::before{
-        position: absolute;
-        content: "";
-        width: 150px;
-        height: 80px;
-        top: -25%;
-        left: -25%;
-        background-image: conic-gradient(#666666 20deg, transparent 120deg);
-        border-radius: 10px;
-    }
-    .Nextjs-Conf-Btn::after{
-        content: "";
-        width: 95%;
-        height: 95%;
-        background-color: white;
-        position: absolute;
-        top: 3%;
-        left: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        border-radius: 1px;
-    }
-    .btn::before {
-        position: absolute;
-        content: "";
-        width: 300px;
-        height: 200px;
-        top: -25%;
-        left: -25%;
-        background-image: conic-gradient(#666666 20deg, transparent 120deg);
-        border-radius: 9999px;
-    }
-    .btn::after{
-        content: "";
-        width: 95%;
-        height: 95%;
-        background-color: white;
-        position: absolute;
-        top: 3%;
-        left: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        border-radius: 9999px;
-    }
+@keyframes hero_fadeIn__hoIwO {
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.Nextjs-Conf-Btn::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 80px;
+  top: -25%;
+  left: -25%;
+  background-image: conic-gradient(#666666 20deg, transparent 120deg);
+  border-radius: 10px;
+}
+.Nextjs-Conf-Btn::after {
+  content: "";
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 200px;
+  top: -25%;
+  left: -25%;
+  background-image: conic-gradient(#666666 20deg, transparent 120deg);
+  border-radius: 9999px;
+}
+.btn::after {
+  content: "";
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
 }

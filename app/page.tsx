@@ -1,5 +1,5 @@
 import Announcement from '@/components/announcement/index'
-import Test from '@/components/announcement/test'
+import GiestWrapper from '@/components/giest-wrapper'
 import Hero from '@/components/hero/index'
 import Image from 'next/image'
 
@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Hero />
       <Announcement />
-      {/* <Test /> */}
+      <GiestWrapper />
     </div>
   )
 }

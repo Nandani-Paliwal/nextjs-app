@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Announcement() {
   return (
-    <div className="announcement flex flex-col justify-center items-center gap-20 ">
+    <div className="announcement flex flex-col justify-center items-center gap-20">
       <div className="flex wrapper w-full">
         <div className="nextjs-grid gap-4 m-6 w-full">
-          <div className="featured col-span-1 row-span-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
+          <div className="featured lg:col-span-1 lg:row-span-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
             <Link href="#">
               <div className="flex flex-col justify-center items-center text-center gap-20">
                 <div
@@ -42,7 +42,7 @@ export default function Announcement() {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="20"
                   >
@@ -55,7 +55,7 @@ export default function Announcement() {
               <div aria-hidden="true" className="tilt-card-glow"></div>
             </Link>
           </div>
-          <div className="major-feat-0 col-span-1 row-span-2 flex flex-col justify-center items-center border border-white92 relative text-center rounded-lg py-8 px-1 shadow overflow-hidden">
+          <div className="major-feat-0 lg:col-span-1 lg:row-span-2 flex flex-col justify-center items-center border border-white92 relative text-center rounded-lg py-8 px-1 shadow overflow-hidden">
             <Link href="">
               <div className="flex flex-col justify-center items-center">
                 <div
@@ -83,7 +83,7 @@ export default function Announcement() {
               </div>
             </Link>
           </div>
-          <div className="minor-feat-0 col-span-1 row-span-1 col-start-2 announcement-link flex flex-col justify-center items-center border border-white92 text-center p-4 rounded-lg shadow overflow-hidden relative ">
+          <div className="minor-feat-0 lg:col-span-1 lg:row-span-1 lg:col-start-2 announcement-link flex flex-col justify-center items-center border border-white92 text-center p-4 rounded-lg shadow overflow-hidden relative ">
             <Link href="">
               <div className="flex flex-col justify-center items-center ">
                 <div className=".announcement-subtext flex flex-col justify-center items-center relative text-gray444 gap-4 my-6 pb-28">
@@ -111,7 +111,7 @@ export default function Announcement() {
               </div>
             </Link>
           </div>
-          <div className="major-feat-1 col-span-1 row-span-2 col-start-3 row-start-2  flex flex-col justify-center items-center border border-white92 text-center p-4 gap-6 rounded-lg shadow overflow-hidden">
+          <div className="major-feat-1 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-2  flex flex-col justify-center items-center border border-white92 text-center p-4 gap-6 rounded-lg shadow overflow-hidden">
             <Link href="">
               <div className="flex flex-col justify-center items-center">
                 <Image
@@ -133,7 +133,7 @@ export default function Announcement() {
               </div>
             </Link>
           </div>
-          <div className="minor-feat-1 col-span-1 row-span-1 col-start-3 row-start-1 announcement-link flex flex-col justify-center items-center border border-white92 text-center p-8 rounded-lg shadow overflow-hidden relative ">
+          <div className="minor-feat-1 lg:col-span-1 lg:row-span-1 lg:col-start-3 lg:row-start-1 announcement-link flex flex-col justify-center items-center border border-white92 text-center p-8 rounded-lg shadow overflow-hidden relative ">
             <Link href="">
               <div className="flex flex-col justify-center items-center">
                 <div className=".announcement-subtext flex flex-col justify-center items-center relative text-gray444 gap-4 my-2">
@@ -161,7 +161,7 @@ export default function Announcement() {
                   >
                     <rect
                       fill="url(#paint0_linear_1389_8626)"
-                      fill-opacity="0.1"
+                      fillOpacity="0.1"
                       height="90"
                       rx="12"
                       width="120"
@@ -189,7 +189,7 @@ export default function Announcement() {
                     ></rect>
                     <rect
                       fill="url(#paint5_linear_1389_8626)"
-                      fill-opacity="0.1"
+                      fillOpacity="0.1"
                       height="90"
                       rx="12"
                       width="120"
@@ -425,7 +425,7 @@ export default function Announcement() {
       </div>
       <div className="flex wrapper w-full">
         <div className="turbopack-grid gap-4 m-6 w-full">
-          <div className="featured col-span-1 row-span-3 col-start-2 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
+          <div className="featured lg:col-span-1 lg:row-span-3 lg:col-start-2 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
             <Link href="#">
               <div
                 aria-hidden="true"
@@ -464,7 +464,7 @@ export default function Announcement() {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="20"
                   >
@@ -477,7 +477,7 @@ export default function Announcement() {
               <div aria-hidden="true" className="tilt-card-glow"></div>
             </Link>
           </div>
-          <div className="major-feat-0 col-span-1 row-span-2 col-start-3 row-start-1 flex flex-col justify-center items-center border border-white92 text-center rounded-lg px-1 shadow overflow-hidden relative">
+          <div className="major-feat-0 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-1 flex flex-col justify-center items-center border border-white92 text-center rounded-lg px-1 shadow overflow-hidden relative">
             <Image
               src="/faster-builds-visual-title.svg"
               alt=""
@@ -499,7 +499,7 @@ export default function Announcement() {
               </div>
             </div>
           </div>
-          <div className="minor-feat-0 col-span-1 row-span-1 row-start-3 col-start-3 announcement-link flex flex-col justify-start items-center border border-white92 text-center p-4 rounded-lg shadow overflow-hidden relative ">
+          <div className="minor-feat-0 lg:col-span-1 lg:row-span-1 lg:row-start-3 lg:col-start-3 announcement-link flex flex-col justify-start items-center border border-white92 text-center p-4 rounded-lg shadow overflow-hidden relative ">
             <div className=".announcement-subtext flex flex-col justify-center items-center relative text-gray444 mt-8">
               <h3 className="announcement-subtext font-medium text-2xl">
                 Incremental by design.
@@ -517,7 +517,7 @@ export default function Announcement() {
               className="next-announcements_pieChartVisual block absolute bottom-0 translate-y-28"
             />
           </div>
-          <div className="major-feat-1 col-span-1 row-span-2 col-start-1 row-start-2  flex flex-col justify-center items-center border border-white92 text-center p-4 gap-6 rounded-lg shadow overflow-hidden">
+          <div className="major-feat-1 lg:col-span-1 lg:row-span-2 lg:col-start-1 lg:row-start-2  flex flex-col justify-center items-center border border-white92 text-center p-4 gap-6 rounded-lg shadow overflow-hidden">
             <div className="flex flex-col justify-center items-center text-center mb-3 mt-9">
               <div className="announcement-subtext flex flex-col justify-center items-center text-7xl font-bold">
                 4x
@@ -539,7 +539,7 @@ export default function Announcement() {
               className=""
             />
           </div>
-          <div className="minor-feat-1 col-span-1 row-span-1  col-start-1 row-start-1 announcement-link flex flex-col justify-center items-center border border-white92 text-center p-8 rounded-lg shadow overflow-hidden relative ">
+          <div className="minor-feat-1 lg:col-span-1 lg:row-span-1  clg:ol-start-1 lg:row-start-1 announcement-link flex flex-col justify-center items-center border border-white92 text-center p-8 rounded-lg shadow overflow-hidden relative ">
             <Image
               src="/ecosystem-visual-title.svg"
               alt=""
@@ -561,7 +561,7 @@ export default function Announcement() {
       </div>
       <div className="flex wrapper w-full">
         <div className="vercel-grid gap-4 m-6 w-full">
-          <div className="featured col-span-1 row-span-2 row-start-1 col-start-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
+          <div className="featured lg:col-span-1 lg:row-span-2 lg:row-start-1 lg:col-start-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
             <Link href="#">
               <div className="flex flex-col justify-center items-center text-center gap-20">
                 <div
@@ -593,7 +593,7 @@ export default function Announcement() {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="20"
                   >
@@ -606,7 +606,7 @@ export default function Announcement() {
               <div aria-hidden="true" className="tilt-card-glow"></div>
             </Link>
           </div>
-          <div className="major-feat-0 col-span-1 row-span-1 col-start-1 row-start-1 flex flex-col justify-center items-center border border-white92 relative text-center rounded-lg py-8 px-1 shadow overflow-hidden">
+          <div className="major-feat-0 lg:col-span-1 lg:row-span-1 lg:col-start-1 lg:row-start-1 flex flex-col justify-center items-center border border-white92 relative text-center rounded-lg py-8 px-1 shadow overflow-hidden">
             <Link href="">
               <div className="flex flex-col justify-center items-center">
                 <div
@@ -633,7 +633,7 @@ export default function Announcement() {
               </div>
             </Link>
           </div>
-          <div className="minor-feat-0 col-span-1 row-span-1 col-start-2 row-start-1 announcement-link flex flex-col justify-center items-center border border-white92 text-center rounded-lg shadow overflow-hidden relative ">
+          <div className="minor-feat-0 lg:col-span-1 lg:row-span-1 lg:col-start-2 lg:row-start-1 announcement-link flex flex-col justify-center items-center border border-white92 text-center rounded-lg shadow overflow-hidden relative ">
             <Link href="">
               <div className=".announcement-subtext flex flex-col justify-center items-center relative text-gray444  my-2">
                 <p className="font-medium text-2xl  max-w-xs">
@@ -652,7 +652,7 @@ export default function Announcement() {
               </div>
             </Link>
           </div>
-          <div className="major-feat-1 col-span-1 row-span-1 col-start-2 row-start-2  flex flex-col justify-center items-center border border-white92 text-center p-4 gap-6 rounded-lg shadow overflow-hidden">
+          <div className="major-feat-1 lg:col-span-1 lg:row-span-1 lg:col-start-2 lg:row-start-2  flex flex-col justify-center items-center border border-white92 text-center p-4 gap-6 rounded-lg shadow overflow-hidden">
             <Link href="">
               <div className="flex flex-col justify-center items-center">
                 <Image
@@ -694,7 +694,7 @@ export default function Announcement() {
                           d="M9.882 2.247c.483-.208 1.128-.128 1.83.34.696.465 1.372 1.271 1.824 2.323.452 1.052.572 2.097.43 2.922-.143.832-.529 1.355-1.012 1.563-.483.207-1.129.127-1.83-.342-.697-.464-1.373-1.27-1.825-2.322-.452-1.052-.571-2.097-.43-2.922.144-.831.53-1.355 1.013-1.562z"
                           fill="#fff"
                           stroke="#121212"
-                          stroke-width="1.27273"
+                          strokeWidth="1.27273"
                         ></path>
                         <path
                           d="M4.442 14.372c.69 3.032 4.216 5.073 8.41 4.21 4.223-.87 6.776-4.191 6.09-7.2-.683-3.001-4.437-5.019-8.649-4.165-4.82 1.48-6.437 4.58-5.85 7.155z"
@@ -707,31 +707,31 @@ export default function Announcement() {
                         <path
                           d="M4.442 14.372c.69 3.032 4.216 5.073 8.41 4.21 4.223-.87 6.776-4.191 6.09-7.2-.683-3.001-4.437-5.019-8.649-4.165-4.82 1.48-6.437 4.58-5.85 7.155z"
                           stroke="#121212"
-                          stroke-width="1.27273"
+                          strokeWidth="1.27273"
                         ></path>
                         <path
                           d="M12.726 18.564c-3.094.346-5.32-1.963-5.727-5.018-.406-3.056 1.16-5.7 4.255-6.046"
                           stroke="#121212"
                           stroke-linecap="round"
-                          stroke-width="1.27273"
+                          strokeWidth="1.27273"
                         ></path>
                         <path
                           d="M15.59 17.569c-3.817 1.386-5.188-2.312-5.618-4.2-.678-2.976.75-5.795 3.188-6.297"
                           stroke="#121212"
                           stroke-linecap="round"
-                          stroke-width="1.27273"
+                          strokeWidth="1.27273"
                         ></path>
                         <path
                           d="M4.156 4.542c-.304.43-.36 1.077-.047 1.862.31.777.957 1.606 1.891 2.267.935.661 1.933.996 2.769 1.029.843.033 1.435-.236 1.74-.665.303-.43.358-1.077.046-1.861-.31-.778-.957-1.607-1.892-2.268-.934-.661-1.932-.995-2.768-1.028-.843-.033-1.435.235-1.74.664z"
                           fill="#fff"
                           stroke="#121212"
-                          stroke-width="1.27273"
+                          strokeWidth="1.27273"
                         ></path>
                         <circle
                           fill="#121212"
                           r="0.636364"
                           stroke="#121212"
-                          stroke-width="0.636364"
+                          strokeWidth="0.636364"
                           transform="scale(-1 1) rotate(12.217 -59.622 -63.439)"
                         ></circle>
                         <defs>
@@ -758,7 +758,7 @@ export default function Announcement() {
                       stroke="currentColor"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       viewBox="0 0 24 24"
                       width="20"
                     >
@@ -771,7 +771,7 @@ export default function Announcement() {
               </div>
             </Link>
           </div>
-          <div className="minor-feat-1 col-span-1 row-span-1 col-start-1 row-start-2 announcement-link flex flex-col justify-start items-center border border-white92 text-center rounded-lg shadow overflow-hidden relative">
+          <div className="minor-feat-1 lg:col-span-1 lg:row-span-1 lg:col-start-1 lg:row-start-2 announcement-link flex flex-col justify-start items-center border border-white92 text-center rounded-lg shadow overflow-hidden relative">
             <div
               aria-hidden="true"
               className="uppercase font-semibold text-textgray text-xs border border-white92 px-1 rounded-[4px] absolute top-3 bg-gray05 right-3"
@@ -794,13 +794,13 @@ export default function Announcement() {
                   alt=""
                   width={452}
                   height={296}
-                  className="absolute right-0 bottom-4 translate-x-20"
+                  className="lg:absolute lg:right-0 lg:bottom-4 lg:translate-x-20"
                 />
               </div>
             </Link>
           </div>
         </div>
-      </div>
+      </div>   
     </div>
   );
 }
