@@ -4,6 +4,7 @@ import Announcement from '@/components/announcement'
 import GiestWrapper from '@/components/giest-wrapper'
 import ReactFramworkProduction from '@/components/react-framewrk-production'
 import Features from '@/components/features'
+import Learn from '@/components/learn'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <GiestWrapper />
       <ReactFramworkProduction />
       <Features />
+      <Learn />
     </div>
   )
 }
