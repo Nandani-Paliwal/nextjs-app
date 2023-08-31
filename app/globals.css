@@ -79,19 +79,20 @@ html {
   opacity: 0.15;
   transition: opacity 0.3s ease;
 }
-.nextjs-grid {
-  display: flex;
-  flex-direction: column;
+.announcement-subtext {
+  background-image: linear-gradient(180deg, #555, #000);
+  background-clip: "";
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.turbopack-grid {
-    display: flex;
-    flex-direction: column;
+.announcement-features {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.025) 50%,
+    transparent
+  );
 }
-.vercel-grid {
-    display: flex;
-    flex-direction: column;
-}
-
 @media (max-width: 1200px) and (min-width: 601px) {
   .nextjs-grid, .turbopack-grid, .vercel-grid {
     display: grid;
@@ -107,6 +108,7 @@ html {
   }
   .nextjs-grid .featured, .turbopack-grid .featured, .vercel-grid .featured{
     grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
   }
   .nextjs-grid .minor-feat-0, .turbopack-grid .minor-feat-0, .vercel-grid .minor-feat-0 {
     grid-column: 1 / span 1;
@@ -123,6 +125,11 @@ html {
   .nextjs-grid .major-feat-1, .turbopack-grid .major-feat-1, .vercel-grid .major-feat-1 {
     grid-column: 2 / span 1;
     grid-row: 3 / span 2;
+  }
+  .announcement-features-subdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
 }
@@ -161,11 +168,31 @@ html {
   }
 
 }
-.announcement-subtext {
-  background-image: linear-gradient(180deg, #555, #000);
-  background-clip: "";
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (min-width: 640px) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  .features-card-more-on-desktop{
+    display: hidden;
+  }
+  .features-card-hide-on-desktop{
+    display: flex;
+  }
+}
+@media (min-width: 960px) {
+  .features-grid{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+  .features-card-more-on-desktop{
+    display: block;
+  }
+  .features-card-hide-on-desktop{
+    display: none;
+
+  }
+  
 }
 .announcement-link::after {
   content: "";
@@ -175,14 +202,7 @@ html {
   transition: white 0.15s;
   z-index: -1;
 }
-.announcement-features {
-  background-image: linear-gradient(
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.025) 50%,
-    transparent
-  );
-}
+
 .announcement-features::before {
   content: "";
   position: absolute;
@@ -279,3 +299,9 @@ html {
   align-items: center;
   border-radius: 9999px;
 }
+.react-framework .main::after, .react-framework .main-subdiv::after, .features .main::after, .features .features-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

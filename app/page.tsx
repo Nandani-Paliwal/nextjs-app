@@ -1,7 +1,10 @@
-import Announcement from '@/components/announcement/index'
+
+import Hero from '@/components/hero'
+import Announcement from '@/components/announcement'
 import GiestWrapper from '@/components/giest-wrapper'
-import Hero from '@/components/hero/index'
-import Image from 'next/image'
+import ReactFramworkProduction from '@/components/react-framewrk-production'
+import Features from '@/components/features'
+
 
 export default function Home() {
   return (
@@ -9,6 +12,8 @@ export default function Home() {
       <Hero />
       <Announcement />
       <GiestWrapper />
+      <ReactFramworkProduction />
+      <Features />
     </div>
   )
 }

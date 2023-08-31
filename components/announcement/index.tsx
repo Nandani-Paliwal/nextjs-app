@@ -5,7 +5,7 @@ export default function Announcement() {
   return (
     <div className="announcement flex flex-col justify-center items-center gap-20">
       <div className="flex wrapper w-full">
-        <div className="nextjs-grid gap-4 m-6 w-full">
+        <div className="nextjs-grid flex flex-col gap-4 m-6 w-full">
           <div className="featured lg:col-span-1 lg:row-span-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
             <Link href="#">
               <div className="flex flex-col justify-center items-center text-center gap-20">
@@ -182,7 +182,7 @@ export default function Announcement() {
                       height="89"
                       rx="11.5"
                       stroke="url(#paint4_angular_1389_8626)"
-                      stroke-opacity="0.1"
+                      strokeOpacity="0.1"
                       width="119"
                       x="0.5"
                       y="0.5"
@@ -209,7 +209,7 @@ export default function Announcement() {
                       height="89"
                       rx="11.5"
                       stroke="url(#paint8_angular_1389_8626)"
-                      stroke-opacity="0.1"
+                      strokeOpacity="0.1"
                       width="119"
                       x="136.5"
                       y="0.5"
@@ -223,22 +223,22 @@ export default function Announcement() {
                         y1="-4.31202e-07"
                         y2="74.2991"
                       >
-                        <stop stop-color="white" stop-opacity="0.2"></stop>
+                        <stop stopColor="white" stopOpacity="0.2"></stop>
                         <stop
                           offset="0.125"
-                          stop-color="white"
-                          stop-opacity="0.24"
+                          stopColor="white"
+                          stopOpacity="0.24"
                         ></stop>
-                        <stop offset="0.347973" stop-color="white"></stop>
+                        <stop offset="0.347973" stopColor="white"></stop>
                         <stop
                           offset="0.567708"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         ></stop>
                       </linearGradient>
                       <linearGradient
@@ -249,22 +249,22 @@ export default function Announcement() {
                         y1="10"
                         y2="33.9391"
                       >
-                        <stop stop-color="white" stop-opacity="0.2"></stop>
+                        <stop stopColor="white" stopOpacity="0.2"></stop>
                         <stop
                           offset="0.125"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
-                        <stop offset="0.347973" stop-color="white"></stop>
+                        <stop offset="0.347973" stopColor="white"></stop>
                         <stop
                           offset="0.567708"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         ></stop>
                       </linearGradient>
                       <linearGradient
@@ -275,22 +275,22 @@ export default function Announcement() {
                         y1="10"
                         y2="33.9391"
                       >
-                        <stop stop-color="white" stop-opacity="0.2"></stop>
+                        <stop stopColor="white" stopOpacity="0.2"></stop>
                         <stop
                           offset="0.125"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
-                        <stop offset="0.347973" stop-color="white"></stop>
+                        <stop offset="0.347973" stopColor="white"></stop>
                         <stop
                           offset="0.567708"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         ></stop>
                       </linearGradient>
                       <linearGradient
@@ -301,11 +301,11 @@ export default function Announcement() {
                         y1="64.875"
                         y2="83.3767"
                       >
-                        <stop stop-color="white"></stop>
+                        <stop stopColor="white"></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0.56"
+                          stopColor="white"
+                          stopOpacity="0.56"
                         ></stop>
                       </linearGradient>
                       <radialGradient
@@ -318,15 +318,15 @@ export default function Announcement() {
                       >
                         <stop
                           offset="0.39711"
-                          stop-color="white"
-                          stop-opacity="0.1"
+                          stopColor="white"
+                          stopOpacity="0.1"
                         ></stop>
                         <stop
                           offset="0.405834"
-                          stop-color="white"
-                          stop-opacity="0.1"
+                          stopColor="white"
+                          stopOpacity="0.1"
                         ></stop>
-                        <stop offset="0.423464" stop-color="white"></stop>
+                        <stop offset="0.423464" stopColor="white"></stop>
                       </radialGradient>
                       <linearGradient
                         gradientUnits="userSpaceOnUse"
@@ -336,22 +336,22 @@ export default function Announcement() {
                         y1="-4.31202e-07"
                         y2="74.2991"
                       >
-                        <stop stop-color="white" stop-opacity="0.2"></stop>
+                        <stop stopColor="white" stopOpacity="0.2"></stop>
                         <stop
                           offset="0.125"
-                          stop-color="white"
-                          stop-opacity="0.24"
+                          stopColor="white"
+                          stopOpacity="0.24"
                         ></stop>
-                        <stop offset="0.347973" stop-color="white"></stop>
+                        <stop offset="0.347973" stopColor="white"></stop>
                         <stop
                           offset="0.567708"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         ></stop>
                       </linearGradient>
                       <linearGradient
@@ -362,11 +362,11 @@ export default function Announcement() {
                         y1="64.875"
                         y2="87.147"
                       >
-                        <stop stop-color="white"></stop>
+                        <stop stopColor="white"></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0.56"
+                          stopColor="white"
+                          stopOpacity="0.56"
                         ></stop>
                       </linearGradient>
                       <linearGradient
@@ -377,22 +377,22 @@ export default function Announcement() {
                         y1="12.3333"
                         y2="32.4808"
                       >
-                        <stop stop-color="white" stop-opacity="0.2"></stop>
+                        <stop stopColor="white" stopOpacity="0.2"></stop>
                         <stop
                           offset="0.125"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
-                        <stop offset="0.347973" stop-color="white"></stop>
+                        <stop offset="0.347973" stopColor="white"></stop>
                         <stop
                           offset="0.567708"
-                          stop-color="white"
-                          stop-opacity="0.4"
+                          stopColor="white"
+                          stopOpacity="0.4"
                         ></stop>
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         ></stop>
                       </linearGradient>
                       <radialGradient
@@ -405,15 +405,15 @@ export default function Announcement() {
                       >
                         <stop
                           offset="0.39711"
-                          stop-color="white"
-                          stop-opacity="0.1"
+                          stopColor="white"
+                          stopOpacity="0.1"
                         ></stop>
                         <stop
                           offset="0.405834"
-                          stop-color="white"
-                          stop-opacity="0.1"
+                          stopColor="white"
+                          stopOpacity="0.1"
                         ></stop>
-                        <stop offset="0.423464" stop-color="white"></stop>
+                        <stop offset="0.423464" stopColor="white"></stop>
                       </radialGradient>
                     </defs>
                   </svg>
@@ -424,7 +424,7 @@ export default function Announcement() {
         </div>
       </div>
       <div className="flex wrapper w-full">
-        <div className="turbopack-grid gap-4 m-6 w-full">
+        <div className="turbopack-grid flex flex-col gap-4 m-6 w-full">
           <div className="featured lg:col-span-1 lg:row-span-3 lg:col-start-2 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
             <Link href="#">
               <div
@@ -560,7 +560,7 @@ export default function Announcement() {
         </div>
       </div>
       <div className="flex wrapper w-full">
-        <div className="vercel-grid gap-4 m-6 w-full">
+        <div className="vercel-grid flex flex-col gap-4 m-6 w-full">
           <div className="featured lg:col-span-1 lg:row-span-2 lg:row-start-1 lg:col-start-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
             <Link href="#">
               <div className="flex flex-col justify-center items-center text-center gap-20">
@@ -712,13 +712,13 @@ export default function Announcement() {
                         <path
                           d="M12.726 18.564c-3.094.346-5.32-1.963-5.727-5.018-.406-3.056 1.16-5.7 4.255-6.046"
                           stroke="#121212"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           strokeWidth="1.27273"
                         ></path>
                         <path
                           d="M15.59 17.569c-3.817 1.386-5.188-2.312-5.618-4.2-.678-2.976.75-5.795 3.188-6.297"
                           stroke="#121212"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           strokeWidth="1.27273"
                         ></path>
                         <path
@@ -743,8 +743,8 @@ export default function Announcement() {
                             y1="6.60272"
                             y2="19.0304"
                           >
-                            <stop stop-color="#FFE073"></stop>
-                            <stop offset="1" stop-color="#FFA800"></stop>
+                            <stop stopColor="#FFE073"></stop>
+                            <stop offset="1" stopColor="#FFA800"></stop>
                           </linearGradient>
                         </defs>
                       </svg>
