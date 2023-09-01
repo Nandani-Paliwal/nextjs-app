@@ -47,60 +47,58 @@ export default function Customers() {
   ];
 
   return (
-    <div className="customers-main  text-center bg-white98  overflow-x-hidden m-2">
-      <div className="flex flex-col justify-center items-center border-white92 border m-0 py-28 relative">
-        <div className="width-full block">
-          <div className="case-studies absolute -top-10 mb-16">
-            <div className="flex justify-between items-center bg-white p-4 rounded-md h-20 gap-x-16 shadow-2xl">
-              <div className="flex justify-center items-center relative w-36">
-                <Image src="/logo-list2/6.svg" alt="" height={36} width={105} />
-              </div>
-              <Link
-                href=""
-                className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
-              >
-                Read Case Study
-              </Link>
+    <div className="customers-mai flex flex-col justify-center items-center border-white92 bg-white98 border m-0 py-28">
+      <div className="case-studies-box relative  mb-16 -mt-36">
+        <div className="slider-wrapper flex justify-between items-center bg-white p-4 rounded-md h-20  shadow-2xl">
+          <div className="content flex justify-between items-center gap-x-16 w-full">
+            <div className="flex justify-center items-center relative w-36">
+              <Image src="/logo-list2/6.svg" alt="" height={36} width={105} />
             </div>
+            <Link
+              href=""
+              className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
+            >
+              Read Case Study
+            </Link>
           </div>
         </div>
-        <span className="showcase"></span>
-        <div className="title flex flex-col justify-center items-center text-center  mb-20">
-          <h2 className=" font-bold text-4xl leading-snug tracking-tighter mb-4">
-            Who's Using Next.js
-          </h2>
-          <h3 className="font-normal text-base text-gray">
-            We're honored some of the most talented creatives out there build
-            with Next.js
-          </h3>
-        </div>
-        <div className="showcase-container-tablet  mt-12"></div>
-        <div className="showcase-container-desktop none overflow-hidden mt-16 mb-8 mx-auto bg-emerald-600">
-          <div className="slides flex mt-12 relative overflow-hidden bg-pink-400">
-            {slidesList.map((slideItem, index) => (
-              <div
-                className={`bg-white rounded-md overflow-hidden cursor-pointer transition-all ease-linear shadow-lg w-80 h-48  ${slideItem.style}`} key={index}
-              >
-                <Image
-                  src={slideItem.image}
-                  alt={slideItem.title}
-                  height={185}
-                  width={330}
-                />
-                <div className="info absolute bottom-0 p-4 text-center text-white bg-gray8 w-full transition-opacity duration-600 ease opacity-0 hover:opacity-100">
-                  <h3 className="font-normal text-base">{slideItem.title}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <Link
-          href=""
-          className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
-        >
-          View Showcase
-        </Link>
       </div>
+      <div className="title flex flex-col justify-center items-center text-center  mb-20">
+        <h2 className=" font-bold text-4xl leading-snug tracking-tighter mb-4">
+          Who's Using Next.js
+        </h2>
+        <h3 className="font-normal text-base text-gray">
+          We&apos;re honored some of the most talented creatives out there build with
+          Next.js
+        </h3>
+      </div>
+      <div className="showcase-container-tablet  mt-12"></div>
+      <div className="showcase-container-desktop none overflow-x-hidden mt-16 mb-8 mx-auto bg-emerald-600">
+        <div className="slides flex mt-12 relative overflow-hidden bg-pink-400">
+          {slidesList.map((slideItem, index) => (
+            <div
+              className={`bg-white rounded-md overflow-hidden cursor-pointer transition-all ease-linear shadow-lg w-80 h-48  ${slideItem.style}`}
+              key={index}
+            >
+              <Image
+                src={slideItem.image}
+                alt={slideItem.title}
+                height={185}
+                width={330}
+              />
+              <div className="info absolute bottom-0 p-4 text-center text-white bg-gray8 w-full transition-opacity duration-600 ease opacity-0 hover:opacity-100">
+                <h3 className="font-normal text-base">{slideItem.title}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Link
+        href=""
+        className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
+      >
+        View Showcase
+      </Link>
     </div>
   );
 }
