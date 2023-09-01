@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Next.js by Vercel - The React",
-  description: `Production grade React applications that scale. The world’s leading companies use Next.js by Vercel to build static and dynamic websites and web applications.`,
+  description: "Production grade React applications that scale. The world's leading companies use Next.js by Vercel to build static and dynamic websites and web applications.",
 };
 
 export default function RootLayout({

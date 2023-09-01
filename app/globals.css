@@ -192,6 +192,12 @@ html {
     display: none;
 
   }
+  .showcase-container-desktop{
+    display: block;
+  }
+  .showcase-container-tablet{
+    display: none;
+  }
   
 }
 .announcement-link::after {
@@ -299,7 +305,7 @@ html {
   align-items: center;
   border-radius: 9999px;
 }
-.react-framework .main::after, .react-framework .main-subdiv::after, .features .main::after, .features .features-list::after {
+.react-framework .main::after, .react-framework .main-subdiv::after, .features .main::after, .features .features-list::after, .customers-main::after {
   content: "";
   display: table;
   clear: both;

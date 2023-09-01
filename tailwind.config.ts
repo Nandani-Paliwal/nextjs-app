@@ -39,6 +39,7 @@ const config: Config = {
       colors: {
         gray: "#696969",
         textgray: "#666",
+        gray8: "rgba(0,0,0,.8)",
         gray75: "rgba(0,0,0,.75)",
         gray05: "rgba(0,0,0,.05)",
         grayshade: "#333",

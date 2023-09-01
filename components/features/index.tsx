@@ -191,7 +191,7 @@ export default function Features() {
   ];
 
   return (
-    <div className="features main flex flex-col justify-center items-center text-center mx-auto ">
+    <div className="features main  text-center mx-auto overflow-hidden">
       <div className="features features-list flex flex-col justify-center items-center px-4 py-28 max-w-5xl mx-auto">
         <div className="features-title flex-col justify-center items-center mt-4 mb-12">
           <h2 className="text-3xl m-4 leading-5 tracking-tighter font-bold">
@@ -262,55 +262,66 @@ export default function Features() {
         </p>
       </div>
       <div className="company-slider mt-8 mb-16">
-        <div className="logoss flex overflow-hidden py-4 ">
-          <div className="logo-slider flex justify-around items-center whitespace-nowrap animate-slide80 ">
-            {logoList1.map((logoitem, index) => (
-              <div className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50" key={index}>
-                <Image
-                  src={logoitem.logo}
-                  alt=""
-                  height={logoitem.height}
-                  width={logoitem.width}
-                />
-              </div>
-            ))}
-             {logoList1.map((logoitem, index) => (
-              <div className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50" key={index}>
-                <Image
-                  src={logoitem.logo}
-                  alt=""
-                  height={logoitem.height}
-                  width={logoitem.width}
-                />
-              </div>
-            ))}
+        <div className="slider-container  overflow-hidden py-4">
+          <div className="slider-content-wrapper flex  justify-around items-center whitespace-nowrap animate-slide80">
+          {logoList1.map((logoitem, index) => (
+                <div
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50 "
+                  key={index}
+                >
+                  <Image
+                    src={logoitem.logo}
+                    alt=""
+                    height={logoitem.height}
+                    width={logoitem.width}
+                  />
+                </div>
+              ))}
+              {logoList1.map((logoitem, index) => (
+                <div
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50 "
+                  key={index}
+                >
+                  <Image
+                    src={logoitem.logo}
+                    alt=""
+                    height={logoitem.height}
+                    width={logoitem.width}
+                  />
+                </div>
+              ))}
           </div>
         </div>
         <div className="margin-bottom:1rem mb-4"></div>
-        <div className="logoss flex overflow-hidden py-4 ">
-        <div className="logo-slider flex justify-around items-center whitespace-nowrap animate-slide100 ">
-            {logoList2.map((logoitem, index) => (
-              <div className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50" key={index}>
-                <Image
-                  src={logoitem.logo}
-                  alt=""
-                  height={logoitem.height}
-                  width={logoitem.width}
-                />
-              </div>
-            ))}
-             {logoList2.map((logoitem, index) => (
-              <div className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50" key={index}>
-                <Image
-                  src={logoitem.logo}
-                  alt=""
-                  height={logoitem.height}
-                  width={logoitem.width}
-                />
-              </div>
-            ))}
+        <div className="slider-container flex overflow-hidden py-4 ">
+          <div className="slider-content-wrapper flex whitespace-nowrap animate-slide100 ">
+          {logoList2.map((logoitem, index) => (
+                <div
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50"
+                  key={index}
+                >
+                  <Image
+                    src={logoitem.logo}
+                    alt=""
+                    height={logoitem.height}
+                    width={logoitem.width}
+                  />
+                </div>
+              ))}
+              {logoList2.map((logoitem, index) => (
+                <div
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50"
+                  key={index}
+                >
+                  <Image
+                    src={logoitem.logo}
+                    alt=""
+                    height={logoitem.height}
+                    width={logoitem.width}
+                  />
+                </div>
+              ))}
           </div>
-          
         </div>
       </div>
     </div>
