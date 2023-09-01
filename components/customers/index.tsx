@@ -65,7 +65,7 @@ export default function Customers() {
       </div>
       <div className="title flex flex-col justify-center items-center text-center  mb-20">
         <h2 className=" font-bold text-4xl leading-snug tracking-tighter mb-4">
-          Who's Using Next.js
+          Who&apos;s Using Next.js
         </h2>
         <h3 className="font-normal text-base text-gray">
           We&apos;re honored some of the most talented creatives out there build with
