@@ -42,14 +42,14 @@ return (
         <p className="font-medium ">Deploy <b>Next.js</b> on Vercel <span aria-hidden="true">&rarr;</span></p>
       </div>
     </div>
-    <header className="flex flex-col justify-center items-center w-full">
-    <div className={`flex flex-col items-center w-full bg-none ${
+    <header className={`flex flex-col justify-center items-center w-full text-base h-[80px] bg-transparent ${
         navbarColor
-          ? ' backdrop-blur-md shadow-lg  '
+          ? "backdrop-blur-md"
           : null
       } `}>
+    <div className="flex flex-col items-center w-full bg-none">
       <nav
-        className="mx-auto flex w-full items-center justify-between p-6 gap-8 lg:px-8 md:w-[88%]"
+        className="mx-auto flex w-full items-center justify-between gap-8 lg:px-8 md:w-[88%] bg-transparent"
         aria-label="Global"
       >
         <div className="flex justify-between items-center lg:flex-1">
