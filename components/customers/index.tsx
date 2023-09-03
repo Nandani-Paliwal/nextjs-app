@@ -47,16 +47,16 @@ export default function Customers() {
   ];
 
   return (
-    <div className="customers-mai flex flex-col justify-center items-center border-white92 bg-white98 border m-0 py-28">
-      <div className="case-studies-box relative  mb-16 -mt-36">
-        <div className="slider-wrapper flex justify-between items-center bg-white p-4 rounded-md h-20  shadow-2xl">
-          <div className="content flex justify-between items-center gap-x-16 w-full">
+    <div className="customers-main flex flex-col justify-center items-center border-white92 bg-white98 border m-0 py-28">
+      <div className="case-studies-box relative text-center  mb-16 -mt-36">
+        <div className="slider-wrapper flex justify-between items-center text-center bg-white p-4 m-auto rounded-md h-20  shadow-2xl">
+          <div className="content flex justify-between items-center gap-x-16 gap-y-5">
             <div className="flex justify-center items-center relative w-36">
               <Image src="/logo-list2/6.svg" alt="" height={36} width={105} />
             </div>
             <Link
               href=""
-              className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
+              className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue w-full"
             >
               Read Case Study
             </Link>

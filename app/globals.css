@@ -95,7 +95,9 @@ html {
   );
 }
 @media (max-width: 1200px) and (min-width: 601px) {
-  .nextjs-grid, .turbopack-grid, .vercel-grid {
+  .nextjs-grid,
+  .turbopack-grid,
+  .vercel-grid {
     display: grid;
     min-height: 680px;
     perspective: 1500px;
@@ -107,23 +109,33 @@ html {
       "major-feat-0 major-feat-1"
       "minor-feat-0 major-feat-1";
   }
-  .nextjs-grid .featured, .turbopack-grid .featured, .vercel-grid .featured{
+  .nextjs-grid .featured,
+  .turbopack-grid .featured,
+  .vercel-grid .featured {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
   }
-  .nextjs-grid .minor-feat-0, .turbopack-grid .minor-feat-0, .vercel-grid .minor-feat-0 {
+  .nextjs-grid .minor-feat-0,
+  .turbopack-grid .minor-feat-0,
+  .vercel-grid .minor-feat-0 {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
   }
-  .nextjs-grid .minor-feat-1, .turbopack-grid .minor-feat-1, .vercel-grid .minor-feat-1 {
+  .nextjs-grid .minor-feat-1,
+  .turbopack-grid .minor-feat-1,
+  .vercel-grid .minor-feat-1 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
   }
-  .nextjs-grid .major-feat-0, .turbopack-grid .major-feat-0, .vercel-grid .major-feat-0 {
+  .nextjs-grid .major-feat-0,
+  .turbopack-grid .major-feat-0,
+  .vercel-grid .major-feat-0 {
     grid-column: 1 / span 1;
     grid-row: 2 / span 2;
   }
-  .nextjs-grid .major-feat-1, .turbopack-grid .major-feat-1, .vercel-grid .major-feat-1 {
+  .nextjs-grid .major-feat-1,
+  .turbopack-grid .major-feat-1,
+  .vercel-grid .major-feat-1 {
     grid-column: 2 / span 1;
     grid-row: 3 / span 2;
   }
@@ -132,11 +144,33 @@ html {
     flex-direction: column;
     justify-content: space-between;
   }
-  
 }
 @media (max-width: 640px) {
-  .showcase-container-tablet .slide{
+  .case-studies-box .slider-wrapper {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  .customers-main .case-studies-box .content {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .showcase-container-tablet .slide {
     flex-basis: 100%;
+  }
+  .newsletter-subscribe-main .content {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1.8rem;
+  }
+  .newsletter-subscribe-main .content .title {
+    text-align: center;
+  }
+
+  .newsletter-subscribe-main .content .email-form {
+    text-align: center;
   }
 }
 @media (min-width: 1201px) {
@@ -172,39 +206,36 @@ html {
       "major-feat-0 minor-feat-0 featured"
       "minor-feat-1 major-feat-1 featured ";
   }
-
 }
 @media (min-width: 640px) {
   .features-grid {
     display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .features-card-more-on-desktop{
+  .features-card-more-on-desktop {
     display: hidden;
   }
-  .features-card-hide-on-desktop{
+  .features-card-hide-on-desktop {
     display: flex;
   }
 }
 @media (min-width: 960px) {
-  .features-grid{
+  .features-grid {
     display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .features-card-more-on-desktop{
+  .features-card-more-on-desktop {
     display: block;
   }
-  .features-card-hide-on-desktop{
+  .features-card-hide-on-desktop {
     display: none;
-
   }
-  .showcase-container-desktop{
+  .showcase-container-desktop {
     display: block;
   }
-  .showcase-container-tablet{
+  .showcase-container-tablet {
     display: none;
   }
-  
 }
 .announcement-link::after {
   content: "";
@@ -311,12 +342,26 @@ html {
   align-items: center;
   border-radius: 9999px;
 }
-.react-framework .main::after, .react-framework .main-subdiv::after, .features .main::after, .features .features-list::after, .customers-main::after, .learn .main::after {
+.react-framework-main::after,
+.react-framework-main .main-subdiv::after,
+.features-main::after,
+.features-main .features-list::after,
+.customers-main::after,
+.learn-main::after,
+.newsletter-subscribe-main::after {
   content: "";
   display: table;
   clear: both;
 }
 .showcase-container-tablet .overlay {
-  background-image: linear-gradient(to bottom,rgba(250,250,250,0)30%,rgba(250,250,250,.7)90%,rgba(250,250,250,1)100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(250, 250, 250, 0) 30%,
+    rgba(250, 250, 250, 0.7) 90%,
+    rgba(250, 250, 250, 1) 100%
+  );
 }
-
+.newsletter-subscribe-main .content {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+}

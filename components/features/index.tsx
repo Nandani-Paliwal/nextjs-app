@@ -191,8 +191,8 @@ export default function Features() {
   ];
 
   return (
-    <div className="features main  text-center mx-auto overflow-hidden">
-      <div className="features features-list flex flex-col justify-center items-center px-4 py-28 max-w-5xl mx-auto">
+    <div className="features-main  text-center mx-auto overflow-hidden">
+      <div className="features-list flex flex-col justify-center items-center px-4 py-28 max-w-5xl mx-auto">
         <div className="features-title flex-col justify-center items-center mt-4 mb-12">
           <h2 className="text-3xl m-4 leading-5 tracking-tighter font-bold">
             The Web SDK

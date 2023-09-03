@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Learn() {
   return (
-    <div className="learn main flex flex-col justify-center items-center w-full mx-auto max-w-lg text-center py-24 px-4">
+    <div className="learn-main flex flex-col justify-center items-center mx-auto max-w-5xl text-center py-24 px-4">
       <div className="flex relative flex-col justify-center items-center text-center mb-8">
         <h2 className="text-3xl mb-4 font-bold ">Learn Next.js</h2>
         <h3 className="text-base font-normal text-gray">
@@ -11,15 +11,15 @@ export default function Learn() {
         </h3>
       </div>
       <Link href="">
-        <div className="inline-flex mb-5 w-[926px]">
+        <figure className="flex mb-5">
           <Image
             src="/learn.png"
             alt=""
             width={926}
             height={679}
-            className="max-w-full h-auto"
+            className="max-w-full h-auto "
           />
-        </div>
+        </figure>
       </Link>
       <Link
           href=""
