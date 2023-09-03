@@ -7,42 +7,42 @@ export default function Customers() {
       title: "Netflix Jobs",
       image: "/slides/netflix-jobs.jpg",
       style:
-        "z-4 transform scale-67 translate-x-[-4.233600241796016px] -translate-y-105",
+        "z-10 transform scale-[0.67] -translate-x-[4.23px] -translate-y-[105px]",
     },
     {
       title: "TikTok",
       image: "/slides/tiktok.png",
       style:
-        " z-5 transform scale-78 translate-x-[-27.278922804770453px] -translate-y-70",
+        " z-20 transform scale-[0.77] -translate-x-[27.27px] -translate-y-[70px] translate[0px]",
     },
     {
       title: "Twitch",
       image: "/slides/twitch.jpg",
       style:
-        "z-6 transform scale-89 translate-x-[-25.244129544236895px] -translate-y-35",
+        "z-30 transform scale-[0.88] -translate-x-[25.24px] -translate-y-[35px] translate[0px]",
     },
     {
       title: "Hulu",
       image: "/slides/hulu.png",
-      style: "z-7 transform scale-100",
+      style: "z-40 transform scale-100 translate-x-[0px] translate[0px]",
     },
     {
       title: "Notion",
       image: "/slides/notion.png",
       style:
-        "z-6 transform scale-89 translate-x-[25.244129544236895px] -translate-y-35",
+        "z-30 transform scale-[0.88] translate-x-[25.24px] -translate-y-[35px] translate[0px]",
     },
     {
       title: "Target",
       image: "/slides/target.png",
       style:
-        "z-5 transform scale-78 translate-x-[27.278922804770453px] -translate-y-70",
+        "z-20 transform scale-[0.77] translate-x-[27.27px] -translate-y-[70px] translate[0px]",
     },
     {
       title: "Nike",
       image: "/slides/nike.jpg",
       style:
-        "z-4 transform scale-67 translate-x-[4.233600241796016px] -translate-y-105",
+        "z-10 transform scale-[0.67] translate-x-[4.23px] -translate-y-[70px] translate[0px]",
     },
   ];
 
@@ -72,12 +72,12 @@ export default function Customers() {
           Next.js
         </h3>
       </div>
-      <div className="showcase-container-tablet  mt-12"></div>
-      <div className="showcase-container-desktop none overflow-x-hidden mt-16 mb-8 mx-auto bg-emerald-600">
-        <div className="slides flex mt-12 relative overflow-hidden bg-pink-400">
-          {slidesList.map((slideItem, index) => (
+      <div className="showcase-container-tablet  relative  mt-12 mb-8">
+        <div className="showcase-container-tablet overlay absolute top-0 right-0 -bottom-8 left-0 z-10"></div>
+        <div className="slides flex flex-wrap">
+        {slidesList.map((slideItem, index) => (
             <div
-              className={`bg-white rounded-md overflow-hidden cursor-pointer transition-all ease-linear shadow-lg w-80 h-48  ${slideItem.style}`}
+              className="showcase-container-tablet slide p-2 flex-1 flex-grow flex-shrink basis-1/2 "
               key={index}
             >
               <Image
@@ -85,6 +85,24 @@ export default function Customers() {
                 alt={slideItem.title}
                 height={185}
                 width={330}
+                className="block mx-auto flex-shrink-0 rounded-md shadow-md"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="showcase-container-desktop hidden overflow-x-hidden mt-16 mb-8 mx-auto bg-purple-600">
+        <div className="slides flex mt-12  bg-red-900">
+          {slidesList.map((slideItem, index) => (
+            <div
+              className={`flex rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px]` }
+              key={index}
+            >
+              <Image
+                src={slideItem.image}
+                alt={slideItem.title}
+                height={185}
+                width={330} className=" "
               />
               <div className="info absolute bottom-0 p-4 text-center text-white bg-gray8 w-full transition-opacity duration-600 ease opacity-0 hover:opacity-100">
                 <h3 className="font-normal text-base">{slideItem.title}</h3>
