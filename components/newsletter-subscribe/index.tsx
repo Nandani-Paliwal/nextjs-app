@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NewsletterSubscribe() {
   return (
-    <div className="newsletter-subscribe-main flex mx-auto py-16 w-full text-center">
+    <div className="newsletter-subscribe-main flex mx-auto py-[100px] w-full text-center">
       <div className="content items-center max-w-5xl px-6 my-8 mx-auto ">
         <aside className="title text-left">
           <h2 className="text-3xl font-bold leading-tight mb-3">
