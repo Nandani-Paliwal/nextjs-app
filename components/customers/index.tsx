@@ -95,7 +95,7 @@ export default function Customers() {
         <div className="slides flex mt-12  bg-red-900">
           {slidesList.map((slideItem, index) => (
             <div
-              className={`flex rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px]` }
+              className={`flex relative rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px]` }
               key={index}
             >
               <Image

@@ -237,6 +237,12 @@ html {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .footer-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
 .announcement-link::after {
   content: "";
   position: absolute;

@@ -39,7 +39,7 @@ export default function Footer() {
         Footer
       </h2>
       <div className="flex flex-col justify-start items-start max-w-7xl ml-20 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="mt-12 grid grid-cols-4 gap-8 xl:mt-0 xl:col-span-4 w-full">
+        <div className="footer-grid items-start justify-start mt-12 grid grid-cols-4 gap-8 w-full">
           <div>
             <h3 className="text-sm font-medium text-black">
               General Resources
@@ -57,7 +57,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="mt-12 md:mt-0">
+          <div>
             <h3 className="text-sm font-medium text-black">More</h3>
             <ul role="list" className="mt-4 space-y-1">
               {navigation.more.map((item) => (
@@ -89,7 +89,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="mt-12 md:mt-0">
+          <div>
             <h3 className="text-sm font-medium text-black">
               Legal
             </h3>
