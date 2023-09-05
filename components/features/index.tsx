@@ -266,7 +266,7 @@ export default function Features() {
           <div className="slider-content-wrapper flex  justify-around items-center whitespace-nowrap animate-slide80">
           {logoList1.map((logoitem, index) => (
                 <div
-                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50 "
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-25 "
                   key={index}
                 >
                   <Image
@@ -279,7 +279,7 @@ export default function Features() {
               ))}
               {logoList1.map((logoitem, index) => (
                 <div
-                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50 "
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-25 "
                   key={index}
                 >
                   <Image
@@ -297,7 +297,7 @@ export default function Features() {
           <div className="slider-content-wrapper flex whitespace-nowrap animate-slide100 ">
           {logoList2.map((logoitem, index) => (
                 <div
-                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50"
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-25"
                   key={index}
                 >
                   <Image
@@ -310,7 +310,7 @@ export default function Features() {
               ))}
               {logoList2.map((logoitem, index) => (
                 <div
-                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-50"
+                  className="slide flex-shrink-0 px-8 py-2 hover:opacity-100 opacity-25"
                   key={index}
                 >
                   <Image

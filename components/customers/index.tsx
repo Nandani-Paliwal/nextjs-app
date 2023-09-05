@@ -92,7 +92,7 @@ export default function Customers() {
         </div>
       </div>
       <div className="showcase-container-desktop hidden overflow-x-hidden mt-16 mb-8 mx-auto bg-purple-600">
-        <div className="slides flex mt-12 max-w-[100vwP]  bg-red-900">
+        <div className="slides flex mt-12 max-w-[100vw] bg-red-900">
           {slidesList.map((slideItem, index) => (
             <div
               className={`flex relative rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px]` }
