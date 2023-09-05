@@ -54,14 +54,14 @@ export default function Header() {
             aria-label="Global"
           >
             <div className=" flex items-center">
-              <Link href="#" className="-m-1.5 p-1.5 mr-6">
+              <Link href="#" className="-m-1.5 p-1.5 mr-6 px-4">
                 <span className="sr-only">Nextjs</span>
                 <Image
-                  className="h-8 md:w-auto w-[65%]"
                   src="/next.svg"
                   alt=""
-                  height={100}
-                  width={100}
+                  height={18.28}
+                  width={90}
+                  
                 />
               </Link>
               <Popover.Group className=" desktop-navItems flex gap-x-6">
