@@ -142,7 +142,7 @@ html {
   .announcement-features-subdiv {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 }
 @media (max-width: 640px) {
@@ -242,6 +242,22 @@ html {
     grid-template-columns: 1fr 1fr;
   }
   
+}
+@media (max-width: 890px) {
+  .Nextjs-Learn-Btn, .github-icon{
+    display: none;
+  }
+  .desktop-navItems {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+@media (max-width: 1020px) {
+  .Nextjs-Feedback-Btn {
+    display: none;
+  }
 }
 .announcement-link::after {
   content: "";

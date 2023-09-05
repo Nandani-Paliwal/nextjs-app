@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function GiestWrapper() {
     return (
-        <div className="announcement-features wrapper flex justify-center  my-20">
-        <div className="announcement-features-subdiv flex flex-col gap-9 justify-center items-center relative py-12 lg:w-full mx-9">
+        <div className="announcement-features wrapper flex justify-center  my-20 max-w-7xl mx-auto">
+        <div className="announcement-features-subdiv flex gap-9 justify-between items-center relative py-12 lg:w-full mx-9">
           <div className="flex flex-col justify-center text-center lg:justify-start lg:items-start gap-2">
             <p className="font-medium text-2xl text-grayshade">Huge new features and major leaps forward for developer experience</p>
             <p className="text-base text-gray444">Read the <Link href="" className="text-blue font-medium transition ease-in-out duration-200">Next.js Conf announcements </Link>blog post or browse the <Link href="" className="text-blue font-medium transition ease-in-out duration-200">changelog</Link> for all the latest.</p>

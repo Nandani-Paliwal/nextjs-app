@@ -23,7 +23,7 @@ export default function Learn() {
       </Link>
       <Link
           href=""
-          className="px-14 h-11 text-center rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
+          className="px-14 py-1 text-center rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
         >
           Get Started
         </Link>

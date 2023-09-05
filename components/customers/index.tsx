@@ -56,7 +56,7 @@ export default function Customers() {
             </div>
             <Link
               href=""
-              className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue w-full"
+              className="px-14 py-1 text-center rounded-md text-white bg-blue leading-10 shadow-ex-md-blue w-full"
             >
               Read Case Study
             </Link>
@@ -92,7 +92,7 @@ export default function Customers() {
         </div>
       </div>
       <div className="showcase-container-desktop hidden overflow-x-hidden mt-16 mb-8 mx-auto bg-purple-600">
-        <div className="slides flex mt-12  bg-red-900">
+        <div className="slides flex mt-12 max-w-[100vwP]  bg-red-900">
           {slidesList.map((slideItem, index) => (
             <div
               className={`flex relative rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px]` }
@@ -113,7 +113,7 @@ export default function Customers() {
       </div>
       <Link
         href=""
-        className="px-14 h-11 rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
+        className="px-14 py-1  rounded-md text-white bg-blue leading-10 shadow-ex-md-blue"
       >
         View Showcase
       </Link>

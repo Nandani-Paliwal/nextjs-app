@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Announcement() {
   return (
-    <div className="announcement flex flex-col justify-center items-center gap-20">
+    <div className="announcement flex flex-col justify-center items-center gap-20 max-w-7xl m-auto">
       <div className="flex wrapper w-full">
         <div className="nextjs-grid flex flex-col gap-4 m-6 w-full">
           <div className="featured lg:col-span-1 lg:row-span-3 flex flex-col justify-center items-center border border-white92 text-center py-20  rounded-lg shadow overflow-hidden relative">
