@@ -259,6 +259,11 @@ html {
     display: none;
   }
 }
+@media (max-width: 600px){
+  .turbopack-grid .minor-feat-0 {
+    height: 20%;
+  }
+}
 .announcement-link::after {
   content: "";
   position: absolute;

@@ -478,14 +478,14 @@ export default function Announcement() {
             </Link>
           </div>
           <div className="major-feat-0 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-1 flex flex-col justify-center items-center border border-white92 text-center rounded-lg px-1 shadow overflow-hidden relative">
-            <Image
+            <div className="flex flex-col justify-center items-center w-full h-full pt-20"><Image
               src="/faster-builds-visual-title.svg"
               alt=""
               width={242}
               height={170}
               className="absolute top-0"
             />
-            <div className=" flex flex-col justify-center items-center mt-32">
+            <div className=" flex relative flex-col justify-center items-center  mt-32 mb-5">
               <div className="announcement-subtext text-7xl font-bold ">
                 700x
               </div>
@@ -497,9 +497,9 @@ export default function Announcement() {
                   than Webpack
                 </p>
               </div>
-            </div>
+            </div></div>
           </div>
-          <div className="minor-feat-0 lg:col-span-1 lg:row-span-1 lg:row-start-3 lg:col-start-3 announcement-link flex flex-col justify-start items-center border border-white92 text-center p-4 rounded-lg shadow overflow-hidden relative ">
+          <div className="minor-feat-0 lg:col-span-1 lg:row-span-1 lg:row-start-3 lg:col-start-3 announcement-link flex flex-col justify-start items-center border border-white92 text-center p-8 rounded-lg shadow overflow-hidden relative ">
             <div className=".announcement-subtext flex flex-col justify-center items-center relative text-gray444 mt-8">
               <h3 className="announcement-subtext font-medium text-2xl">
                 Incremental by design.
