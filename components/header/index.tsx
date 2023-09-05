@@ -44,11 +44,11 @@ export default function Header() {
         </div>
       </div>
       <header
-        className={`flex flex-col justify-center items-center w-full text-base h-[80px] bg-transparent max-w-5xl mx-auto px-4 ${
+        className={`flex flex-col justify-center items-center w-full text-base h-[80px] bg-transparent mx-auto px-4 ${
           navbarColor ? "backdrop-blur-md" : null
         } `}
       >
-        <div className="flex flex-col justify-center w-full h-full bg-none max-w-7xl ">
+        <div className="flex flex-col justify-center w-full h-full bg-none max-w-5xl ">
           <nav
             className=" flex relative h-full gap-2 w-full items-center justify-between "
             aria-label="Global"

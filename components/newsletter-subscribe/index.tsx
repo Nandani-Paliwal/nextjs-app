@@ -29,7 +29,7 @@ export default function NewsletterSubscribe() {
                     >
                       <g
                         fill="none"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         stroke="currentColor"
                         strokeWidth="1"
                         transform="translate(-598.000000, -418.000000) translate(560.000000, 404.000000) translate(23.000000, 0.000000) translate(15.000000, 13.000000) translate(0.000000, 1.000000)"
