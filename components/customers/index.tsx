@@ -7,42 +7,42 @@ export default function Customers() {
       title: "Netflix Jobs",
       image: "/slides/netflix-jobs.jpg",
       style:
-        "z-10 transform scale-[0.67] -translate-x-[4.23px] -translate-y-[105px]",
+        "z-10 transform scale-[0.67] translate-y-[-70px] left-[-6%]",
     },
     {
       title: "TikTok",
       image: "/slides/tiktok.png",
       style:
-        " z-20 transform scale-[0.77] -translate-x-[27.27px] -translate-y-[70px] translate[0px]",
+        " z-20 transform scale-[0.77] translate-y-[-53px] left-[6.5%]",
     },
     {
       title: "Twitch",
       image: "/slides/twitch.jpg",
       style:
-        "z-30 transform scale-[0.88] -translate-x-[25.24px] -translate-y-[35px] translate[0px]",
+        "z-30 transform scale-[0.88] translate-y-[-29px] left-[20.5%]",
     },
     {
       title: "Hulu",
       image: "/slides/hulu.png",
-      style: "z-40 transform scale-100 translate-x-[0px] translate[0px]",
+      style: "z-40 transform scale-1 left-[36.5%]",
     },
     {
       title: "Notion",
       image: "/slides/notion.png",
       style:
-        "z-30 transform scale-[0.88] translate-x-[25.24px] -translate-y-[35px] translate[0px]",
+        "z-30 transform scale-[0.88] translate-y-[-29px] left-[52.9%]",
     },
     {
       title: "Target",
       image: "/slides/target.png",
       style:
-        "z-20 transform scale-[0.77] translate-x-[27.27px] -translate-y-[70px] translate[0px]",
+        "z-20 transform  scale-[0.77] translate-y-[-50px] left-[67.1%]",
     },
     {
       title: "Nike",
       image: "/slides/nike.jpg",
       style:
-        "z-10 transform scale-[0.67] translate-x-[4.23px] -translate-y-[70px] translate[0px]",
+        "z-10 transform scale-[0.67] translate-y-[-70px] left-[80%]",
     },
   ];
 
@@ -91,11 +91,11 @@ export default function Customers() {
           ))}
         </div>
       </div>
-      <div className="showcase-container-desktop hidden overflow-x-hidden mt-16 mb-8 mx-auto bg-purple-600">
-        <div className="slides flex mt-12 max-w-[100vw] bg-red-900">
+      <div className="showcase-container-desktop hidden overflow-x-hidden mt-16 mb-8 mx-auto w-full">
+        <div className="slides flex mt-12 max-w-[100vw] relative w-full h-52">
           {slidesList.map((slideItem, index) => (
             <div
-              className={`flex relative rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px]` }
+              className={`flex  rounded-md cursor-pointer transition-all ease-linear shadow-lg overflow-hidden bg-white w-[330px] h-[185px] absolute ${slideItem.style}` }
               key={index}
             >
               <Image
@@ -105,7 +105,7 @@ export default function Customers() {
                 width={330} className=" "
               />
               <div className="info absolute bottom-0 p-4 text-center text-white bg-gray8 w-full transition-opacity duration-600 ease opacity-0 hover:opacity-100">
-                <h3 className="font-normal text-base">{slideItem.title}</h3>
+                <h3 className="font-normal text-sm">{slideItem.title}</h3>
               </div>
             </div>
           ))}
