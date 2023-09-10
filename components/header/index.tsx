@@ -44,7 +44,7 @@ export default function Header() {
         </div>
       </div>
       <header
-        className={`flex flex-col justify-center items-center w-full text-base h-[80px] bg-transparent mx-auto px-4 ${
+        className={`flex flex-col justify-center items-center w-full text-base h-[80px] mx-auto px-4 ${
           navbarColor ? "backdrop-blur-md" : null
         } `}
       >

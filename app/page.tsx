@@ -1,4 +1,3 @@
-
 import Hero from '@/components/hero'
 import Announcement from '@/components/announcement'
 import GiestWrapper from '@/components/giest-wrapper'
@@ -11,7 +10,7 @@ import NewsletterSubscribe from '@/components/newsletter-subscribe'
 
 export default function Home() {
   return (
-    <div className='overflow-x-hidden'>
+    <div className=''>
       <Hero />
       <Announcement />
       <GiestWrapper />
