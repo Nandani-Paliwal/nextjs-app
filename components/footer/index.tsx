@@ -38,8 +38,8 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="flex flex-col justify-start items-start max-w-7xl ml-20 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="footer-grid items-start justify-start mt-12 grid grid-cols-4 gap-8 w-full">
+      <div className="flex flex-col justify-start items-start max-w-7xl ml-20 px-4 sm:px-6 lg:py-14 lg:px-8">
+        <div className="footer-grid items-start justify-start grid grid-cols-4 gap-8 w-full">
           <div>
             <h3 className="text-sm font-medium text-black">
               General Resources
