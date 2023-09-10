@@ -64,6 +64,7 @@ export default function Header() {
                   
                 />
               </Link>
+              {/* desktop nav items */}
               <Popover.Group className=" desktop-navItems flex gap-x-6">
                 <Link
                   href="#"
@@ -105,11 +106,24 @@ export default function Header() {
             </div>
             <div className="flex justify-end items-center ">
               <div className="navbar-header-buttons flex justify-between items-center gap-2">
-                <Link href="#">
-                  <div className="Nextjs-Conf-Btn w-max relative flex justify-center items-center rounded bg-white shadow py-2 px-3 overflow-hidden text-black text-sm before:animate-fullSpin hover:text-gray">
-                    <span arial-hidden="true" className="z-10">
-                      Next.js Conf
+                <Link href="#" className="cursor-pointer">
+                  <div className="cursor-none rounded-lg relative shadow-md ">
+                    <span className="conf-gradient-wrapper-container_gradientWrapper rounded-[7px]">
+                    <span
+                  aria-hidden="true"
+                  className="conf-gradient-wrapper_grayscaleBorder__BOowP conf-gradient-wrapper_gradient__4eJTD rounded-[7px]"
+                ></span>
+                <span
+                  aria-hidden="true"
+                  className="conf-gradient-wrapper_active__noDev"
+                ></span>
+                <span className="conf-gradient-wrapper_children">
+                  <div className="hero-buttons-contents gap-3 h-[34px] flex justify-between items-center px-3 text-sm text-black bg-white rounded-[5px] whitespace-nowrap">
+                    <p>Nextjs Conf</p>
+                  </div>
+                </span>
                     </span>
+
                   </div>
                 </Link>
                 <div className="Nextjs-Feedback-Btn flex relative justify-center items-center rounded bg-white shadow py-2 px-3 text-gray text-sm border border-transparent hover:border-black hover:border">

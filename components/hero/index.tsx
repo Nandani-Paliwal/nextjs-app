@@ -27,23 +27,49 @@ export default function Hero() {
         </div>
         <div aria-hidden="true" className="hero-fade"></div>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <Link href="#">
-            <div className="flex">
-              <div className="btn relative flex justify-center items-center rounded-2xl overflow-hidden before:animate-fullSpin">
-                <div className="flex justify-center items-center  text-white bg-black py-3 px-5 rounded-full  font-medium gap-3 z-10 ">
-                  <Image src="/triangle.svg" alt="" height={15} width={15} />
-                  <p>Start Deploying</p>
-                </div>
-              </div>
+          <Link href="#" className="cursor-pointer">
+            <div className=" cursor-none rounded-[32px] relative shadow-md ">
+              <span className="conf-gradient-wrapper-container_gradientWrapper rounded-[32px]">
+                <span
+                  aria-hidden="true"
+                  className="conf-gradient-wrapper_grayscaleBorder__BOowP conf-gradient-wrapper_gradient__4eJTD rounded-[32px]"
+                ></span>
+                <span
+                  aria-hidden="true"
+                  className="conf-gradient-wrapper_active__noDev"
+                ></span>
+                <span className="conf-gradient-wrapper_children">
+                  <div className="hero-buttons-contents gap-3 h-12 flex justify-between items-center px-5 font-medium text-white bg-black rounded-3xl whitespace-nowrap">
+                    <Image src="/triangle.svg" alt="" height={15} width={15} />
+                    <p>Start Deploying</p>
+                  </div>
+                </span>
+              </span>
             </div>
           </Link>
-          <Link href="#">
-            <div className="btn relative flex justify-center items-center rounded-full bg-white shadow py-3 px-5 overflow-hidden before:animate-fullSpin">
-              <div className="flex justify-center items-center text-black font-medium gap-3">
-                <p className="z-10">
-                  Replay the Event <span aria-hidden="true">→</span>
-                </p>
-              </div>
+          <Link href="#" className="cursor-pointer">
+            <div className="cursor-none rounded-[32px] relative shadow-md ">
+              <span className="conf-gradient-wrapper-container_gradientWrapper rounded-[32px]">
+                <span
+                  aria-hidden="true"
+                  className="conf-gradient-wrapper_grayscaleBorder__BOowP conf-gradient-wrapper_gradient__4eJTD rounded-[32px]"
+                ></span>
+                <span
+                  aria-hidden="true"
+                  className="conf-gradient-wrapper_active__noDev"
+                ></span>
+                <span className="conf-gradient-wrapper_children">
+                  <div className="hero-buttons-contents gap-3 h-12 flex justify-between items-center px-5 font-medium text-black bg-white rounded-3xl whitespace-nowrap">
+                    Replay the Event
+                    <Image
+                      src="/arrow.svg"
+                      alt="arrow"
+                      height={24}
+                      width={24}
+                    />
+                  </div>
+                </span>
+              </span>
             </div>
           </Link>
         </div>
